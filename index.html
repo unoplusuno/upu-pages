@@ -1,1 +1,99 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block description %}{% endblock description %}">
+    <meta name="google" content="notranslate" />
+    <meta property="og:image" content="{% block og_image_url %}{% static 'images/logos/screenshot4.jpg' %}{% endblock og_image_url %}" />
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/bootstrap-select.min.css" %}">
+    <link rel="icon" href="{% static 'images/logos/favicon1.ico' %}">
+    <link rel="shortcut icon" href="{% static 'images/logos/favicon1.ico' %}">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+</head>
+
+<body style="background-color: #fafafa;font-family: 'Droid Sans', sans-serif;">
+    <style type="text/css">
+        .proj-box {
+            border-top: 1px solid #bbb;
+            /*border-bottom: 1px solid #bbb;*/
+            padding:15px 10px 20px 10px;
+            width: 400px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .proj-box .title {
+            font-size: 1.2em;
+            color: #444;
+        }
+
+        .proj-box .description {
+            color: #999;
+            margin-top: 20px;
+        }
+
+        .proj-box .separator {
+            border-top: 2px solid #dd4b39;
+            width:50px;
+        }
+
+        .proj-box-real:hover {
+            background-color: #ceddec;
+        }
+
+        .proj-box-real {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .proj-link {
+            text-decoration: none;
+        }
+
+    </style>
+
+    <div style="text-align: center;">
+
+        <p style="padding:50px 10px 50px 10px;font-size: 2em;">
+            <a style="text-decoration: none;color: #333;" href="mailto:hola@unoplusuno.com">hola<span style="margin:3px;">@</span>unoplusuno.com</a>
+        </p>
+
+        <a class="proj-link" href="http://babelpost.com">
+            <div class="proj-box proj-box-real">
+                <p class="title">babelpost.com</p>
+                <div class="separator"></div>
+                <p class="description">
+                    See how the news look like in every country in the world. The news are translated
+                    to your language using Google Translate.
+                </p>
+            </div>
+        </a>
+
+        <br/>
+
+        <a class="proj-link" href="http://tripsak.com">
+            <div class="proj-box proj-box-real">
+                <p class="title">tripsak.com</p>
+                <div class="separator"></div>
+                <p class="description">
+                    A travel research tool for independent travellers. Provides all the information you need
+                    about every travel destination in the world.
+                </p>
+            </div>
+        </a>
+
+        <br/>
+
+        <div class="proj-box" style="margin-left: -5px;"></div>
+
+    </div>
+</body>
+</html>
